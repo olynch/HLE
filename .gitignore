@@ -1,0 +1,3 @@
+/HLE.cabal
+dist-*
+.ghc.environment*

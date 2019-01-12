@@ -1,0 +1,56 @@
+name: HLE
+version: 0.1.0
+license: BSD3
+license-file: LICENSE
+author: Owen Lynch
+maintainer: oclynch888@gmail.com
+extra-source-files:
+  - ChangeLog.md
+
+ghc-options: -Wall
+
+dependencies:
+  - base >= 4.10 && < 5
+  - protolude
+  - microlens-platform
+  - mtl
+  - transformers
+  - text
+  - containers
+  - linear
+  # - cairo
+
+default-extensions:
+  - BangPatterns
+  - DataKinds
+  - DefaultSignatures
+  - DeriveFoldable
+  - DeriveFunctor
+  - DeriveGeneric
+  - DeriveTraversable
+  - EmptyDataDecls
+  - ExistentialQuantification
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - KindSignatures
+  - LambdaCase
+  - MultiParamTypeClasses
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - PartialTypeSignatures
+  - PatternGuards
+  - RankNTypes
+  - RecordWildCards
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TupleSections
+  - TypeFamilies
+  - TypeSynonymInstances
+  - ViewPatterns
+
+executable:
+  main: Main.hs
+  source-dirs: src
